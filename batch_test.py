@@ -8,7 +8,7 @@ Original file is located at
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-# %%writefile batch_test.py
+
 # import pandas as pd
 # from preprocessing import load_reviews
 # from generation import generer_reponse
