@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pyngrok
+nest_asyncio
+transformers
+torch
+pandas
+datasets
+pytest
+flake8
