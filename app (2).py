@@ -13,7 +13,7 @@ Original file is located at
 # import uvicorn
 # from pyngrok import ngrok
 # from preprocessing import clean_text
-# from generation import generer_reponse 
+# from generation import generer_reponse
 # app = FastAPI()
 # @app.get("/")
 # def home():
