@@ -27,6 +27,7 @@ def clean_text(text):
     text = re.sub(r"[^a-zàâéèêëîïôùûç0-9\s]", "", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
+    
 
 
 def label_sentiment(label):
