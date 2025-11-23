@@ -12,20 +12,19 @@ Original file is located at
 # import pandas as pd
 # from preprocessing import load_reviews
 # from generation import generer_reponse
-# 
+ 
 # df = load_reviews(limit=100000)
 # df_negatifs = df[df["label"] == 2].copy()
 # df_test = df_negatifs.head(25)
-# 
+ 
 # reponses = []
 # batch_size = 5
-# 
+ 
 # for i in range(0, len(df_test), batch_size):
 #     batch = df_test["texte_clean"].iloc[i:i+batch_size]
 #     for texte in batch:
 #         reponses.append(generer_reponse(texte))
 #     print(f"Batch {i//batch_size + 1} terminé")
-# 
+ 
 # df_test["reponse"] = reponses
 # print(df_test[["texte_clean", "reponse"]])
-#
