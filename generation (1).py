@@ -76,3 +76,4 @@ def generer_reponse(texte, sentiment="negative"):
     )
 
     return gen_pipe(prompt)[0]["generated_text"]
+    
