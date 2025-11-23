@@ -14,14 +14,11 @@ Original file is located at
 # import uvicorn
 # from pyngrok import ngrok
 # from preprocessing import clean_text
-# from generation import generer_reponse
- 
+# from generation import generer_reponse 
 # app = FastAPI()
- 
 # @app.get("/")
 # def home():
 #     return {"message": "API Avis Clients OK"}
- 
 # @app.post("/analyse")
 # def analyser_avis(texte: str):
 #     texte_clean = clean_text(texte)
@@ -30,7 +27,6 @@ Original file is located at
 #         "texte": texte_clean,
 #         "reponse": reponse
 #     }
- 
 # if __name__ == "__main__":
 #     nest_asyncio.apply()
 #     public_url = ngrok.connect(8000)
