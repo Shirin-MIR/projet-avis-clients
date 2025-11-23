@@ -19,6 +19,7 @@ Original file is located at
     https://colab.research.google.com/drive/1z2CkP-IyCQ_kyjfLwaHXF7qITMnG6BXW
 """
 
+
 def clean_text(text):
     text = str(text).lower()
     text = re.sub(r"http\S+|www\S+", "", text)
@@ -26,12 +27,14 @@ def clean_text(text):
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
+
 def label_sentiment(label):
     if label == 1:
         return "positive"
     elif label == 2:
         return "negative"
     return "neutral"
+
 
 def load_reviews(limit=1000):
     dataset = load_dataset(
