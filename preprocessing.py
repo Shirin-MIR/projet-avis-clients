@@ -20,9 +20,9 @@ Original file is located at
     https://colab.research.google.com/drive/1z2CkP-IyCQ_kyjfLwaHXF7qITMnG6BXW
 """
 
-#import pandas as pd
-#import re
-#from datasets import load_dataset
+import pandas as pd
+import re
+from datasets import load_dataset
 
 
 def clean_text(text):
