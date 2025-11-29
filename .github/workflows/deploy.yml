@@ -37,3 +37,5 @@ jobs:
         with:
           app-name: 'avis-client'
           package: .
+        env:
+          SKIP_MODEL_DOWNLOAD: true
