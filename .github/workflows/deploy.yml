@@ -11,20 +11,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Étape 1 : récupérer le code
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Étape 2 : installer Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
+      # Étape 3 : installer les dépendances
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Deploy to Azure Web App
+      # Étape 4 : login sur Azure avec le Service Principal
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # Étape 5 : déployer sur Azure Web App
+      - name: Deploy to Azure WebApp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'avis-client'
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
