@@ -29,9 +29,9 @@ def clean_text(text):
 
 
 def label_sentiment(label):
-    if label == 1:
+    if label >= 3:
         return "positive"
-    elif label == 2:
+    elif label < 2:
         return "negative"
     return "neutral"
 
